@@ -1,12 +1,18 @@
-let nombreProducto = "sillas";
-let precioUnitario = 5000;
+let nombreProducto = "200g de chocolate";
+let precioUnitario = 500;
 let cantidadDeseada = prompt("Ingrese la cantidad de producto que desea comprar")
-let costoTotal = precioUnitario * cantidadDeseada
 
+function sumarProducto (precio, cantidad){
+    let totalGastado = precio * cantidad;
+    return totalGastado
+}
+
+let totalCompra = sumarProducto(precioUnitario,cantidadDeseada);
+console.log(`La cantidad total gastada es de $ ${totalCompra}`);
 
 if(cantidadDeseada >= 5){
     alert("Se le aplicara un descuento del 10%")
-    let descuento = (costoTotal * 10)/100
+    let descuento = (totalCompra * 90)/100
     alert(`El costo total de su compra sera ${descuento}`);
 
 }else{
