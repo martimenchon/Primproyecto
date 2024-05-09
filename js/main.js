@@ -1,25 +1,18 @@
-let nombreProducto = "200g de chocolate";
-let precioUnitario = 500;
-let cantidadDeseada = prompt("Ingrese la cantidad de producto que desea comprar")
+const productos = ["bananas","pomelos","sandia","frutillas","arandanos"]
 
-function sumarProducto (precio, cantidad){
-    let totalGastado = precio * cantidad;
-    return totalGastado
+function listaproductos (Array) {
+    for (let i = 0; i < Array.length; i++) {
+        console.log(`Producto ${i+1}: ${Array[i]}`);
+    }
+    return Array
 }
 
-let totalCompra = sumarProducto(precioUnitario,cantidadDeseada);
-console.log(`La cantidad total gastada es de $ ${totalCompra}`);
+console.log(listaproductos(productos));
 
-if(cantidadDeseada >= 5){
-    alert("Se le aplicara un descuento del 10%")
-    let descuento = (totalCompra * 90)/100
-    alert(`El costo total de su compra sera ${descuento}`);
-
-}else{
-    alert("No compro la cantidad sufiente de producto para recibir el descuento")
-    alert(`El costo total de su compra sera ${costoTotal}`);
-}
-
+console.log("Venta de productos");
+productos.pop()
+console.log("La nueva lista es:");
+console.log(listaproductos(productos));
 
 alert("Gracias por su compra")
 
