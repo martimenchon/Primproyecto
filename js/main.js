@@ -1,19 +1,19 @@
-const productos = ["bananas","pomelos","sandia","frutillas","arandanos"]
+const productos = 
+    {nombre : `camiseta`, precio: 34543, cantidadDisponible: 5}
 
-function listaproductos (Array) {
-    for (let i = 0; i < Array.length; i++) {
-        console.log(`Producto ${i+1}: ${Array[i]}`);
-    }
-    return Array
-}
-
-console.log(listaproductos(productos));
-
-console.log("Venta de productos");
-productos.pop()
-console.log("La nueva lista es:");
-console.log(listaproductos(productos));
-
-alert("Gracias por su compra")
+console.log(productos)
 
 
+
+let a = productos.nombre
+
+let cambio = productos.nombre = `zapatillas`
+
+
+console.log(productos)
+
+productos.categoria = `calzado`
+console.log(productos)
+
+delete productos.cantidadDisponible
+console.log(productos)
