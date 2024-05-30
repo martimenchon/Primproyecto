@@ -1,19 +1,16 @@
-const productos = 
-    {nombre : `camiseta`, precio: 34543, cantidadDisponible: 5}
+// Al cargar la página, queremos que el precio inicial de "$500" cambie a "$450" utilizando las propiedades getElementById() e innerText.
 
-console.log(productos)
-
+// También modificar los estilos del título mediante querySelector.
 
 
-let a = productos.nombre
+const precio = document.getElementById(`PrecioProducto`)
+const producto = document.querySelector(`#nombreProducto`);
 
-let cambio = productos.nombre = `zapatillas`
+
+//precio.textContent = `Precio = $450`
+precio.innerText = `Precio = $450`
 
 
-console.log(productos)
-
-productos.categoria = `calzado`
-console.log(productos)
-
-delete productos.cantidadDisponible
-console.log(productos)
+producto.style.color = "white"
+producto.style.backgroundColor = "black"
+producto.style.fontFamily = 'Lucida Sans'
