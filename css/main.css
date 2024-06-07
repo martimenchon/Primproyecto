@@ -2,3 +2,14 @@ body{
     background-color: bisque;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.titulocss{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    box-shadow: 2px 1px 2px 1px slategrey;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
